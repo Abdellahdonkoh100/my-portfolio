@@ -1,245 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Tells the browser how to interpret characters -->
     <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on phones and tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdellah | Web Developer</title>
+
+    <!-- Text displayed on the browser tab -->
+    <title>Abdellah Donkoh | Web Developer</title>
+
+    <!-- Connects this HTML file to our CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- =========================
+         NAVIGATION BAR
+         ========================= -->
+
     <nav>
-        <ul>
+
+        <!-- Your name/logo -->
+        <h2 class="logo">Abdellah</h2>
+
+        <!-- Mobile menu button -->
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+
+        <!-- Navigation links -->
+        <ul class="nav-links" id="nav-links">
+
+            <!-- Goes to the top of the homepage -->
             <li><a href="#home">Home</a></li>
+
+            <!-- Goes to the About section -->
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-             <li><a href="#contact">Contacts</a></li>
+
+            <!-- Goes to the Skills section -->
+            <li><a href="#skills">Skills</a></li>
+
+            <!-- Opens the separate Projects page -->
+            <li><a href="projects.html">Projects</a></li>
+
+            <!-- Goes to the Contact section -->
+            <li><a href="#contact">Contact</a></li>
+
         </ul>
+
     </nav>
-<section id="skills">
-<h2> My skills</h2>
 
-<div class="skills-container">
 
-    <div class="skill">
-<h3>HTML</h3>
-<p> Building the structure of websites.</p>
-    </div>
+    <!-- =========================
+         HOME SECTION
+         ========================= -->
 
-    <div class="skill">
-<h3> CSS</h3>
-<p>Creating responsive and attractive designs.</p>
-    </div>
-
-    <div class="skill">
-<h3> JavaScript</h3>
-<p>Adding functioality and interaction.</p>
-    </div>
-
-  
-
-    <div class="skill">
-<h3>Git & GitHub</h3>
-<p> Managing and sharing my code</p>
-    </div>
-</div>
-</section>
     <section id="home">
-    <div class="hero-content">
 
-        <div class="hero-text">
-        <p class="intro">Hello, I'm </p>
+        <div class="hero-content">
 
-        <h1> Abdellah Donkoh</h1>
+            <!-- Text on the left -->
+            <div class="hero-text">
 
-        <h2> Computer Science Student & Web Developer</h2>
+                <!-- Small introduction -->
+                <p class="intro">Hello, I'm</p>
 
-        <p class="hero-description">
-            I build responsible and user-friendly websites that help bussinesses and individuals grow online.
-        </p>
+                <!-- Your name -->
+                <h1>Abdellah Donkoh</h1>
 
-        <div class="hero-buttons">
-            <a href="#projects" class="primary-button">
-                view my projects
-            </a>
+                <!-- Your professional title -->
+                <h2>Computer Science Student & Web Developer</h2>
 
-            <a href="#contact" class="secondary-btn">
-                Contact me
-            </a>
+                <!-- Short description -->
+                <p class="hero-description">
+                    I build responsive, user-friendly websites and digital
+                    experiences while continuously improving my skills in
+                    web development and software engineering.
+                </p>
+
+                <!-- Hero actions -->
+                <div class="hero-buttons">
+
+                    <!-- Opens the separate Projects page -->
+                    <a href="projects.html" class="primary-btn">
+                        View My Projects →
+                    </a>
+
+                    <!-- Goes to Contact on this page -->
+                    <a href="#contact" class="secondary-btn">
+                        Let's Talk
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Your profile picture -->
+            <div class="hero-image">
+
+                <img src="images/profile.jpg" alt="Abdellah Donkoh">
+
+            </div>
+
         </div>
-        </div>
 
-    
-        <div class="hero-image">
-<img src="images/profile.jpg" alt="Abdellah Donkoh">
-        </div>
-
-    </div>
-
-    <a></a>
-    </section >
-
-    <section id="projects">
-<h2>My projects</h2>
-
-<div class="projects-container">
-
-    <div class="project-card">
-
-
-<img
-src="images/closet.png"
-alt="De Naba Closet website"
-class="project-image"
->
-
-<h3>De Naba Closet</h3>
-
-<p>
-    A modern e-commerce website for displaying and selling fashion products.
-</p>
-
-<p class="technologies">
-    HTML. CSS. JavaScript
-</p>
-
-<a href="#" class="project-btn">Live Demo</a>
-<a href="#" class="project-btn">GitHub</a>
-    </div>
-
-    <div class="project-card">
-
-        <img
-src="images/datahub.png"
-alt="datahub website"
-class="project-datahub"
->
-<h3> Data Hub</h3>
-
-<p>
-   A website for displaying mobile data bundle offers and allowing customers to view available packages.
-</p>
-
-<p>
-  <a href="#" class="project-btn">Live Demo</a>
-    <a href="#" class="project-btn">GitHub</a>
-</p>
-
-<p>
-    HTML . CSS .JavaScript
-</p>
-  
-
-    </div>
-</div>
-
-<div class="project-card">
-
-    <img
-src="images/portfolio.png"
-alt="portfolio website"
-class="project-portfolio"
->
-<h3> My portfolio</h3>
-
-<p>
-    My personal  developer portfolio website showcasing my skills and projects.
-</p>
-
-<a href="#" class="project-btn">Live Demo</a>
-<a href="#" class="project-btn">GitHub</a>
-</div>
-
-<div>
-    <h3>Project</h3>
-    <p>My first web development project.</p>
-</div>
-
-<div>
-    <h3>Project 2</h3>
-    <p>Another website I built.</p>
-</div>
     </section>
 
+
+    <!-- =========================
+         ABOUT SECTION
+         ========================= -->
+
+    <section id="about">
+
+        <!-- Small section label -->
+        <p class="section-label">ABOUT ME</p>
+
+        <!-- Section heading -->
+        <h2>Who I Am</h2>
+
+        <!-- About paragraph -->
+        <p>
+            I am a Computer Science student at the University of Cape Coast
+            with a strong interest in web development and software engineering.
+            I enjoy building practical websites and learning new technologies
+            that solve real-world problems.
+        </p>
+
+        <!-- Second About paragraph -->
+        <p>
+            My goal is to become a skilled software developer and contribute
+            to meaningful technology projects while continuously improving
+            my technical and problem-solving skills.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS SECTION
+         ========================= -->
+
+    <section id="skills">
+
+        <!-- Small section label -->
+        <p class="section-label">MY SKILLS</p>
+
+        <!-- Section heading -->
+        <h2>Technologies I Work With</h2>
+
+        <!-- Contains all skill cards -->
+        <div class="skills-container">
+
+            <!-- HTML skill -->
+            <div class="skill-card">
+                <h3>HTML</h3>
+
+                <p>
+                    Building clean and well-structured web pages.
+                </p>
+            </div>
+
+
+            <!-- CSS skill -->
+            <div class="skill-card">
+                <h3>CSS</h3>
+
+                <p>
+                    Creating responsive and modern website designs.
+                </p>
+            </div>
+
+
+            <!-- JavaScript skill -->
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+
+                <p>
+                    Adding interactive features and functionality.
+                </p>
+            </div>
+
+
+            <!-- Git and GitHub skill -->
+            <div class="skill-card">
+                <h3>Git & GitHub</h3>
+
+                <p>
+                    Managing code and collaborating with developers.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT SECTION
+         ========================= -->
+
     <section id="contact">
-         <p class="section-label">CONTACT</p>
 
-         <h2> Let's work Together</h2>
+        <!-- Small section label -->
+        <p class="section-label">CONTACT</p>
 
-         <p>
-            Have a project or opportunity? Feel free to get in touch.
-         </p>
+        <!-- Section heading -->
+        <h2>Let's Work Together</h2>
 
-         <div class="contact-links">
+        <!-- Contact introduction -->
+        <p>
+            Have a project, internship opportunity, or just want to connect?
+            Feel free to reach out to me.
+        </p>
 
-            <a href="mailto:Abdellahdonkoh@gmail.com">
+        <!-- Contact links -->
+        <div class="contact-links">
+
+            <!-- Opens the user's email application -->
+            <a href="mailto:your-email@gmail.com">
                 Email Me
             </a>
 
-            <a href="https://github.com/abdellahdonkoh"  target="_blank">
-GitHub
+            <!-- Opens GitHub profile -->
+            <a href="https://github.com/Abdellahdonkoh100" target="_blank">
+                GitHub
             </a>
 
-            <a href="https://www.linkedin.com/in/Abdellah Donkoh/" target="_blank">
-linkedin
+            <!-- Replace the link with your real LinkedIn profile -->
+            <a href="https://www.linkedin.com/" target="_blank">
+                LinkedIn
             </a>
-         </div>
-         
+
+        </div>
+
     </section>
-   <section id="about">
 
-    <div class="about-content">
 
-        <div class="about-text">
-            <p class="section-label">ABOUT ME</p>
+    <!-- =========================
+         FOOTER
+         ========================= -->
 
-            <h2> Who I Am</h2>
-            <p>
-                I'm a computer Science student passionate about web development and technology. I enjoy creating websites that are simple, responsive and easy to use.
-            
-            </p>
-            <p>
-                I'm currently improving my skills in HTML, CSS and JavaScript while building real-world projects.
-                My goal is to become a professional software developer.
-            </p>
+    <footer>
 
-        </div>
-        <div class="about-info">
+        <!-- Copyright notice -->
+        <p>
+            © 2026 Abdellah Donkoh. All rights reserved.
+        </p>
 
-        </div>
+    </footer>
 
-        <h3> Education</h3>
-        <p> Bsc. Computer Science</p>
-    </div>
-    <div>
-        <h3>Focus</h3>
-        <p>Web Development</p>
-    </div>
 
-    <div>
-        <h3> Currently Learning</h3>
-        <p>JavaScript & GitHub</p>
-       
-    </div>
-   </section>
+    <!-- Connects this page to JavaScript -->
+    <script src="script.js"></script>
 
-   <footer>
-    <p> @ 2026 Abdellah Donkoh. All right s reserved.</p>
-   </footer>
-
-   <nav>
-    <h2 class="logo">Abdellah</h2>
-
-    <button class="menu-toggle" id="menu-toggle">
-          =
-    </button>
-
-    <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-   </nav>
-    
 </body>
+
 </html>
