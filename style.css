@@ -101,17 +101,64 @@ nav {
     gap: 30px;
 }
 
-/* Styles navigation links */
+
+
+    /* Styles the navigation links */
 .nav-links a {
-    /* Uses soft lavender */
+    /* Uses the normal text color */
     color: var(--text);
 
-    /* Removes default underline */
+    /* Removes the default underline */
     text-decoration: none;
 
-    /* Makes color changes smooth */
-    transition: 0.3s ease;
+    /* Makes the links slightly bold */
+    font-weight: 500;
+
+    /* Keeps the hover animation smooth */
+    transition: all 0.3s ease;
+
+    /* Allows the underline effect to be positioned */
+    position: relative;
 }
+
+/* Changes the link when the mouse is over it */
+.nav-links a:hover {
+    /* Changes the text to purple */
+    color: var(--accent-light);
+}
+
+/* Creates a small underline animation */
+.nav-links a::after {
+    /* Creates the underline */
+    content: "";
+
+    /* Positions it underneath the text */
+    position: absolute;
+
+    /* Places it at the bottom */
+    bottom: -6px;
+
+    /* Starts from the left */
+    left: 0;
+
+    /* Initially invisible */
+    width: 0;
+
+    /* Makes it thin */
+    height: 2px;
+
+    /* Uses your purple accent */
+    background: var(--accent);
+
+    /* Smoothly expands the underline */
+    transition: width 0.3s ease;
+}
+
+/* Expands the underline when hovering */
+.nav-links a:hover::after {
+    width: 100%;
+}
+
 
 /* Changes navigation link on hover */
 .nav-links a:hover {
@@ -252,13 +299,15 @@ nav {
 
 /* Styles the View My Projects button */
 .primary-btn {
+  /* Styles the View My Projects button */
+.primary-btn {
     /* Purple background */
     background: var(--accent);
 
     /* White text */
     color: white;
 
-    /* Removes underline */
+    /* Removes the default underline */
     text-decoration: none;
 
     /* Adds space inside the button */
@@ -275,6 +324,19 @@ nav {
 
     /* Adds a subtle purple glow */
     box-shadow: 0 5px 20px rgba(139, 92, 246, 0.25);
+}
+
+/* Changes the button when the mouse is over it */
+.primary-btn:hover {
+    /* Slightly darker purple */
+    background: #7C3AED;
+
+    /* Moves the button slightly upward */
+    transform: translateY(-4px);
+
+    /* Makes the glow stronger */
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+}
 }
 
 /* Hover effect for View My Projects */
@@ -905,8 +967,10 @@ footer p {
 
     /* Makes profile image smaller */
     .hero-image img {
-        width: 210px;
-        height: 210px;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        object-fit: cover;
     }
 
     /* Makes hero text fit mobile */
